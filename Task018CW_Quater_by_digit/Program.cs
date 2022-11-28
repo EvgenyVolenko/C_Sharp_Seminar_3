@@ -19,17 +19,17 @@ if (digit == "1")
     diapX = "X > 0"; 
     diapY = "Y > 0";
 }
-if (digit == "2") 
+else if (digit == "2") 
 {
     diapX = "X < 0"; 
     diapY = "Y > 0";
 }
-if (digit == "3") 
+else if (digit == "3") 
 {
     diapX = "X < 0"; 
     diapY = "Y < 0";
 }
-if (digit == "4") 
+else 
 {
     diapX = "X > 0"; 
     diapY = "Y < 0";

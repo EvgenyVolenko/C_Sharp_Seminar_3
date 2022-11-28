@@ -9,6 +9,7 @@ Console.Write("Введите координату Y точки: ");
 int y = Convert.ToInt32(Console.ReadLine());
 
 if (x > 0 && y > 0) Console.Write("Ваша точка в четверти № 1.");
-if (x < 0 && y > 0) Console.Write("Ваша точка в четверти № 2.");
-if (x < 0 && y < 0) Console.Write("Ваша точка в четверти № 3.");
-if (x > 0 && y < 0) Console.Write("Ваша точка в четверти № 4.");
+else if (x < 0 && y > 0) Console.Write("Ваша точка в четверти № 2.");
+else if (x < 0 && y < 0) Console.Write("Ваша точка в четверти № 3.");
+else if (x > 0 && y < 0) Console.Write("Ваша точка в четверти № 4.");
+else Console.WriteLine("Невозможно определить координатную четверть");

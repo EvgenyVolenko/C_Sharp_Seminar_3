@@ -20,8 +20,9 @@ int by = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите координату Z точки B: ");
 int bz = Convert.ToInt32(Console.ReadLine());
 
-double s2 = Math.Sqrt(Math.Pow(ax - bx, 2) + Math.Pow(ay - by, 2));
+// Можно оставлять знаки ${<peremennaya>:f<int>}, а можно округлить до стольки-то знаков.
+// Математически мне кажется округление более верно.
 
-double s3 = Math.Round(Math.Sqrt(Math.Pow(s2 ,2) + Math.Pow(az - bz, 2)), 2);
+double s = Math.Round(Math.Sqrt(Math.Pow(ax - bx, 2) + Math.Pow(ay - by, 2) + Math.Pow(az - bz, 2)), 2);
 
-Console.Write("Расстояние между точками = " + s3);
+Console.Write("Расстояние между точками = " + s);
