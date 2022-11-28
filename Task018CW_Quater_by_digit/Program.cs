@@ -21,8 +21,8 @@ if (digit == "1")
 }
 if (digit == "2") 
 {
-    diapX = "X > 0"; 
-    diapY = "Y < 0";
+    diapX = "X < 0"; 
+    diapY = "Y > 0";
 }
 if (digit == "3") 
 {
@@ -31,8 +31,8 @@ if (digit == "3")
 }
 if (digit == "4") 
 {
-    diapX = "X < 0"; 
-    diapY = "Y > 0";
+    diapX = "X > 0"; 
+    diapY = "Y < 0";
 }
 
 xy (digit, diapX, diapY);
