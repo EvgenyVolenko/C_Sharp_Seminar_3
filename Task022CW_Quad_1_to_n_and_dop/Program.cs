@@ -24,10 +24,12 @@ while (count <= digit)
 }
 
 Console.WriteLine("Значения прямого массива: ");
-
 printArray(array);
 Console.WriteLine();
+
 razvorot(array);
+
+Console.WriteLine("Значения развернутого массива:");
 printArray(array);
 
 void razvorot (int[] arr)
@@ -39,8 +41,6 @@ void razvorot (int[] arr)
         arr[arr.Length - 1 - i] = arr[i];
         arr[i] = temp;
     }
-
-    Console.WriteLine("Значения развернутого массива:");
 }
 
 void printArray (int[] arr)
